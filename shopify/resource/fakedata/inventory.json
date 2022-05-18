@@ -1,0 +1,25 @@
+[{
+  "name": "Apples",
+  "code": "123AB",
+  "type": "Fruit",
+  "supplier": "Hills",
+  "quantity": 5,
+  "price": 1.50,
+  "createdTime": "01/01/2022"
+}, {
+  "name": "Mangoes",
+  "code": "123BC",
+  "type": "Fruit",
+  "supplier": "Boro",
+  "quantity": 15,
+  "price": 3.24,
+  "createdTime": "01/05/2022"
+}, {
+  "name": "Oranges",
+  "code": "123CD",
+  "type": "Fruit",
+  "supplier": "Clave",
+  "quantity": 50,
+  "price": 2.67,
+  "createdTime": "03/01/2022"
+}]

@@ -1,0 +1,2 @@
+mockDB: False
+servicePort: 8080

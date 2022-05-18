@@ -1,0 +1,454 @@
+2022-05-16 07:51:10,749 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 07:51:10,758 	 [INFO | app.py:19] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 08:14:30,638 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 08:14:30,660 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 08:14:37,917 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1681, in _execute
+    result = self.prepare()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\baseHandler.py", line 64, in prepare
+    if not self.isArgumentsSafe(args):
+AttributeError: 'DashboardControlHandler' object has no attribute 'isArgumentsSafe'
+2022-05-16 08:14:37,943 	 [ERROR | web.py:2239] > 500 GET / (::1) 28.72ms
+2022-05-16 08:14:38,539 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 1.00ms
+2022-05-16 08:16:03,888 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 08:16:03,894 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 08:16:11,675 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\dashboardControlHandler.py", line 6, in get
+    self.render('index.html')
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 863, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1009, in render_string
+    t = loader.load(template_name)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 446, in load
+    self.templates[name] = self._create_template(name)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 477, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Sherine Davis\\Code\\PycharmProjects\\Shopify-Developer-Intern-Challenge\\shopify\\service\\handler\\index.html'
+2022-05-16 08:16:11,692 	 [ERROR | web.py:2239] > 500 GET / (::1) 20.16ms
+2022-05-16 08:19:16,738 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 08:19:16,744 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 08:19:20,892 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\dashboardControlHandler.py", line 8, in get
+    self.render(os.path.join(DirUtil.getShopifyDir(), 'index.html'))
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 863, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1009, in render_string
+    t = loader.load(template_name)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 446, in load
+    self.templates[name] = self._create_template(name)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 477, in _create_template
+    with open(path, "rb") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\Sherine Davis\\Code\\PycharmProjects\\Shopify-Developer-Intern-Challenge\\shopify\\index.html'
+2022-05-16 08:19:20,896 	 [ERROR | web.py:2239] > 500 GET / (::1) 6.01ms
+2022-05-16 08:20:05,280 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 08:20:05,284 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 08:20:09,111 	 [INFO | web.py:2239] > 200 GET / (::1) 2.01ms
+2022-05-16 19:21:14,028 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:21:14,038 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:21:19,521 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\dashboardControlHandler.py", line 8, in get
+    slug = slug.upper()
+AttributeError: 'NoneType' object has no attribute 'upper'
+2022-05-16 19:21:19,539 	 [ERROR | web.py:2239] > 500 GET / (::1) 19.01ms
+2022-05-16 19:21:19,695 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 1.00ms
+2022-05-16 19:22:30,661 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:22:30,668 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:22:34,677 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\dashboardControlHandler.py", line 11, in get
+    self.render(os.path.join(DirUtil.getWebDir(), 'index.html'))
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 863, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1009, in render_string
+    t = loader.load(template_name)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 446, in load
+    self.templates[name] = self._create_template(name)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 478, in _create_template
+    template = Template(f.read(), name=name, loader=self)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 318, in __init__
+    self.file = _File(self, _parse(reader, self))
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 1048, in _parse
+    reader.raise_parse_error("unknown operator: %r" % operator)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 839, in raise_parse_error
+    raise ParseError(msg, self.name, self.line)
+tornado.template.ParseError: unknown operator: 'with' at D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\web\index.html:21
+2022-05-16 19:22:34,677 	 [ERROR | web.py:2239] > 500 GET / (::1) 9.02ms
+2022-05-16 19:23:14,927 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:23:14,938 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:23:17,028 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\dashboardControlHandler.py", line 11, in get
+    self.render(os.path.join(DirUtil.getWebDir(), 'index.html'))
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 863, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1012, in render_string
+    return t.generate(**namespace)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 362, in generate
+    return execute()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\web\index_html.generated.py", line 5, in _tt_execute
+    _tt_tmp = static_url("css\bootstrap.min.css")  # D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\web\index.html:4
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1569, in static_url
+    self.require_setting("static_path", "static_url")
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1587, in require_setting
+    raise Exception(
+Exception: You must define the 'static_path' setting in your application to use static_url
+2022-05-16 19:23:17,028 	 [ERROR | web.py:2239] > 500 GET / (::1) 0.00ms
+2022-05-16 19:24:35,956 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:24:35,958 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:24:42,611 	 [ERROR | web.py:2990] > Could not open static file 'D:\\Sherine Davis\\Code\\PycharmProjects\\Shopify-Developer-Intern-Challenge\\shopify\\web\\css\x08ootstrap.min.css'
+2022-05-16 19:24:42,611 	 [ERROR | web.py:1789] > Uncaught exception GET / (::1)
+HTTPServerRequest(protocol='http', host='localhost:8080', method='GET', uri='/', version='HTTP/1.1', remote_ip='::1')
+Traceback (most recent call last):
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1702, in _execute
+    result = method(*self.path_args, **self.path_kwargs)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\dashboardControlHandler.py", line 11, in get
+    self.render(os.path.join(DirUtil.getWebDir(), 'index.html'))
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 863, in render
+    html = self.render_string(template_name, **kwargs)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\web.py", line 1012, in render_string
+    return t.generate(**namespace)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\site-packages\tornado\template.py", line 362, in generate
+    return execute()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\web\index_html.generated.py", line 11, in _tt_execute
+    _tt_tmp = url_for('static', filename='js/jquery-3.2.1.min.js')  # D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\web\index.html:56
+NameError: name 'url_for' is not defined
+2022-05-16 19:24:42,611 	 [ERROR | web.py:2239] > 500 GET / (::1) 3.03ms
+2022-05-16 19:26:35,978 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:26:35,983 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:26:38,766 	 [ERROR | web.py:2990] > Could not open static file 'D:\\Sherine Davis\\Code\\PycharmProjects\\Shopify-Developer-Intern-Challenge\\shopify\\web\\css\x08ootstrap.min.css'
+2022-05-16 19:26:38,812 	 [INFO | web.py:2239] > 200 GET / (::1) 47.56ms
+2022-05-16 19:26:38,843 	 [WARNING | web.py:2239] > 404 GET /static/css%08ootstrap.min.css (::1) 1.00ms
+2022-05-16 19:26:39,030 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 183.70ms
+2022-05-16 19:26:39,032 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 2.00ms
+2022-05-16 19:27:29,999 	 [INFO | web.py:2239] > 304 GET / (::1) 0.00ms
+2022-05-16 19:27:30,020 	 [WARNING | web.py:2239] > 404 GET /static/css%08ootstrap.min.css (::1) 0.00ms
+2022-05-16 19:27:36,901 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:27:36,907 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:27:39,450 	 [INFO | web.py:2239] > 200 GET / (::1) 8.99ms
+2022-05-16 19:27:39,657 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 168.46ms
+2022-05-16 19:28:07,244 	 [INFO | web.py:2239] > 304 GET / (::1) 1.00ms
+2022-05-16 19:28:11,964 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:28:11,968 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:28:13,415 	 [INFO | web.py:2239] > 200 GET / (::1) 5.00ms
+2022-05-16 19:28:27,659 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:28:27,667 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:28:29,368 	 [INFO | web.py:2239] > 200 GET / (::1) 62.36ms
+2022-05-16 19:29:40,139 	 [WARNING | web.py:2239] > 405 POST / (::1) 0.00ms
+2022-05-16 19:59:43,599 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 19:59:43,615 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 19:59:48,579 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 19:59:48,770 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=bce8b5a619480f5ac7a76f8881d9b7ba5aab861b5ce6ac9a18aaaa921ab27dabe48be14ec572bf8e9ed8586480041a9fdd794b9be36def54e3f3a36bfb93a107 (::1) 143.82ms
+2022-05-16 19:59:54,109 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 11.00ms
+2022-05-16 19:59:59,143 	 [INFO | web.py:2239] > 304 GET / (::1) 0.99ms
+2022-05-16 19:59:59,219 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 2.00ms
+2022-05-16 20:00:23,572 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:00:23,572 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:00:27,665 	 [INFO | web.py:2239] > 200 GET / (::1) 3.01ms
+2022-05-16 20:00:27,924 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 198.04ms
+2022-05-16 20:00:30,525 	 [INFO | web.py:2239] > 304 GET / (::1) 1.00ms
+2022-05-16 20:00:30,611 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 2.00ms
+2022-05-16 20:01:39,780 	 [WARNING | web.py:2239] > 404 GET //api/inventory/list (::1) 1.00ms
+2022-05-16 20:02:08,263 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:02:08,263 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:02:11,313 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 20:02:11,579 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=08e9fac4cfe9ea0a14cd78a4df1232db54c81a39d0555a983f0cba4f84857360ea4613071320036a3245acd832f79308150efb08648dde5c963046f4587fa072 (::1) 207.99ms
+2022-05-16 20:02:11,589 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 20:02:17,386 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 20:02:17,387 	 [ERROR | inventoryControlHandler.py:23] > name 'InventoryDAOHelper' is not defined
+Traceback (most recent call last):
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 17, in get
+    response, state = self.getBasedOnFilters()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 56, in getBasedOnFilters
+    f = InventoryDAOHelper.getQueryParams(**args)
+NameError: name 'InventoryDAOHelper' is not defined
+2022-05-16 20:02:17,397 	 [WARNING | web.py:2239] > 404 GET /api/inventory/list (::1) 11.00ms
+2022-05-16 20:04:13,701 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:04:13,717 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:04:19,416 	 [INFO | web.py:2239] > 200 GET / (::1) 5.00ms
+2022-05-16 20:04:19,674 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 173.04ms
+2022-05-16 20:09:54,307 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:09:54,312 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:10:07,199 	 [INFO | web.py:2239] > 200 GET / (::1) 3.00ms
+2022-05-16 20:10:07,401 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 162.40ms
+2022-05-16 20:10:07,407 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=b4dbb6669d7b18a63db7704c648f750e0ba8138ad8bc8b47879fe2dedbb198a81a965ccde790eb459c4774186b86996db6b759dfda1f05e2e7148ebbd3a9ab4d (::1) 3.00ms
+2022-05-16 20:10:07,415 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 7.00ms
+2022-05-16 20:10:07,421 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 12.00ms
+2022-05-16 20:10:07,446 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 7.00ms
+2022-05-16 20:10:07,936 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 1.00ms
+2022-05-16 20:10:35,636 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:10:35,636 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:10:39,295 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 20:10:39,601 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 240.64ms
+2022-05-16 20:10:39,617 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=c6801dbc1c670a5131d2026ff41db28bb35022f9ea59f0d2b89f894dcbce5994dfeb36068a332031988df01f07b008dd74d2308ea720e1a316fa4b6199c8b20f (::1) 0.00ms
+2022-05-16 20:10:39,619 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 0.00ms
+2022-05-16 20:10:39,619 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 0.00ms
+2022-05-16 20:10:39,645 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 4.01ms
+2022-05-16 20:10:40,123 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 0.00ms
+2022-05-16 20:11:38,715 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 20:11:38,771 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 0.00ms
+2022-05-16 20:11:38,771 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=c6801dbc1c670a5131d2026ff41db28bb35022f9ea59f0d2b89f894dcbce5994dfeb36068a332031988df01f07b008dd74d2308ea720e1a316fa4b6199c8b20f (::1) 0.00ms
+2022-05-16 20:11:38,787 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 15.63ms
+2022-05-16 20:11:38,787 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 15.63ms
+2022-05-16 20:11:38,834 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 20:11:39,374 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 1.00ms
+2022-05-16 20:12:04,855 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 20:12:04,891 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 4.42ms
+2022-05-16 20:12:04,892 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=c6801dbc1c670a5131d2026ff41db28bb35022f9ea59f0d2b89f894dcbce5994dfeb36068a332031988df01f07b008dd74d2308ea720e1a316fa4b6199c8b20f (::1) 0.00ms
+2022-05-16 20:12:04,892 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 0.00ms
+2022-05-16 20:12:04,902 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 0.00ms
+2022-05-16 20:12:04,965 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 20:12:05,577 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 15.62ms
+2022-05-16 20:13:01,393 	 [INFO | web.py:2239] > 200 GET / (::1) 1.00ms
+2022-05-16 20:13:01,437 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 1.00ms
+2022-05-16 20:13:01,443 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=c6801dbc1c670a5131d2026ff41db28bb35022f9ea59f0d2b89f894dcbce5994dfeb36068a332031988df01f07b008dd74d2308ea720e1a316fa4b6199c8b20f (::1) 2.00ms
+2022-05-16 20:13:01,447 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 3.00ms
+2022-05-16 20:13:01,450 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 2.00ms
+2022-05-16 20:13:01,471 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 20:13:01,472 	 [ERROR | inventoryControlHandler.py:23] > name 'InventoryDAOHelper' is not defined
+Traceback (most recent call last):
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 17, in get
+    response, state = self.getBasedOnFilters()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 56, in getBasedOnFilters
+    f = InventoryDAOHelper.getQueryParams(**args)
+NameError: name 'InventoryDAOHelper' is not defined
+2022-05-16 20:13:01,474 	 [WARNING | web.py:2239] > 404 GET /api/inventory/list (::1) 3.00ms
+2022-05-16 20:13:01,479 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 4.00ms
+2022-05-16 20:13:01,965 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 1.00ms
+2022-05-16 20:15:12,035 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:15:12,044 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:15:22,248 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 20:15:22,483 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 188.09ms
+2022-05-16 20:15:22,483 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=76dacf16ba9858c269ea7e2e0a6995ac9a710be4d0e65c3894e84980d2ce5e298abf3dc8a918124e3335f0926a2ac6ab63583d6d80953becf60354fa7089b6f3 (::1) 0.00ms
+2022-05-16 20:15:22,495 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 0.00ms
+2022-05-16 20:15:22,495 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 0.00ms
+2022-05-16 20:15:22,499 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 20:15:22,499 	 [ERROR | inventoryControlHandler.py:23] > type object 'InventoryTableDA0Helper' has no attribute 'getQueryParams'
+Traceback (most recent call last):
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 17, in get
+    response, state = self.getBasedOnFilters()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 56, in getBasedOnFilters
+    f = InventoryTableDA0Helper.getQueryParams(**args)
+AttributeError: type object 'InventoryTableDA0Helper' has no attribute 'getQueryParams'
+2022-05-16 20:15:22,515 	 [WARNING | web.py:2239] > 404 GET /api/inventory/list (::1) 15.63ms
+2022-05-16 20:15:22,515 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 20:15:23,075 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 0.00ms
+2022-05-16 20:17:11,826 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:17:11,826 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:17:17,084 	 [INFO | web.py:2239] > 200 GET / (::1) 3.06ms
+2022-05-16 20:17:17,319 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 204.01ms
+2022-05-16 20:17:17,319 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=76dacf16ba9858c269ea7e2e0a6995ac9a710be4d0e65c3894e84980d2ce5e298abf3dc8a918124e3335f0926a2ac6ab63583d6d80953becf60354fa7089b6f3 (::1) 0.00ms
+2022-05-16 20:17:17,319 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 0.00ms
+2022-05-16 20:17:17,319 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 0.00ms
+2022-05-16 20:17:17,350 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 15.63ms
+2022-05-16 20:17:17,350 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 20:17:17,350 	 [ERROR | inventoryControlHandler.py:23] > Object of type dict_items is not JSON serializable
+Traceback (most recent call last):
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 20, in get
+    self.send_response(response, state)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\baseHandler.py", line 46, in send_response
+    jsonData = json.dumps(response, cls=CustomJsonEncoder).replace("</", "<\\/")
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\json\__init__.py", line 234, in dumps
+    return cls(
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\baseHandler.py", line 13, in default
+    return json.JSONEncoder.default(self, obj)
+  File "C:\Users\sheri\AppData\Local\Programs\Python\Python39\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type dict_items is not JSON serializable
+2022-05-16 20:17:17,391 	 [WARNING | web.py:2239] > 404 GET /api/inventory/list (::1) 41.26ms
+2022-05-16 20:17:17,855 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 0.00ms
+2022-05-16 20:19:29,287 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:19:29,287 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:19:35,285 	 [INFO | web.py:2239] > 200 GET / (::1) 15.00ms
+2022-05-16 20:19:35,573 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 234.05ms
+2022-05-16 20:19:35,579 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=76dacf16ba9858c269ea7e2e0a6995ac9a710be4d0e65c3894e84980d2ce5e298abf3dc8a918124e3335f0926a2ac6ab63583d6d80953becf60354fa7089b6f3 (::1) 4.00ms
+2022-05-16 20:19:35,586 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 6.00ms
+2022-05-16 20:19:35,589 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 7.00ms
+2022-05-16 20:19:35,605 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 20:20:16,319 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 20:20:16,325 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 20:20:20,632 	 [INFO | web.py:2239] > 200 GET / (::1) 6.00ms
+2022-05-16 20:20:20,906 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css?v=4056508074c098e63356f88b53f8abdacae6bdd46e76e79028505be5d94ed6ec9cc6513ce2dbd1b398b23649a0e260f989b28669594df847daf3010fe296fe5d (::1) 200.05ms
+2022-05-16 20:20:20,914 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=76dacf16ba9858c269ea7e2e0a6995ac9a710be4d0e65c3894e84980d2ce5e298abf3dc8a918124e3335f0926a2ac6ab63583d6d80953becf60354fa7089b6f3 (::1) 2.00ms
+2022-05-16 20:20:20,928 	 [INFO | web.py:2239] > 200 GET /static/js/jquery-3.2.1.min.js?v=20da3fe171c075635ef82f8de57644c7a50be45eb1207d96a51b5eadeaac17ee830b5058d87e88501e20ec41ef897f65cec26a0380eaf49698c6eaa5981d8483 (::1) 3.00ms
+2022-05-16 20:20:20,930 	 [INFO | web.py:2239] > 200 GET /static/js/bootstrap.min.js?v=e27be06bc898dcf893f06cc49cafcbb6ba6e3a69106a89a500f6993e57600b3636392784811237a1a783967dbe05d57a0769c78f8074a0c3a59b16b655b1d350 (::1) 4.00ms
+2022-05-16 20:20:20,958 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 20:20:20,958 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 20:20:20,958 	 [INFO | web.py:2239] > 200 GET /api/inventory/list (::1) 1.00ms
+2022-05-16 20:20:20,971 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 11.00ms
+2022-05-16 20:20:21,654 	 [WARNING | web.py:2239] > 404 GET /favicon.ico (::1) 1.00ms
+2022-05-16 21:39:09,478 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:39:09,480 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:39:21,508 	 [INFO | web.py:2239] > 304 GET / (::1) 6.63ms
+2022-05-16 21:39:21,588 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:39:21,588 	 [ERROR | inventoryControlHandler.py:23] > type object 'InventoryTableDA0Helper' has no attribute 'to_dict'
+Traceback (most recent call last):
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 17, in get
+    response, state = self.getAll()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 64, in getAll
+    res = InventoryTableDA0Helper.to_dict(res)
+AttributeError: type object 'InventoryTableDA0Helper' has no attribute 'to_dict'
+2022-05-16 21:39:21,588 	 [WARNING | web.py:2239] > 404 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 21:39:21,808 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 160.03ms
+2022-05-16 21:39:38,468 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:39:38,477 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:39:40,907 	 [INFO | web.py:2239] > 304 GET / (::1) 10.14ms
+2022-05-16 21:39:41,147 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 172.81ms
+2022-05-16 21:39:41,148 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:39:41,148 	 [ERROR | inventoryControlHandler.py:23] > 'tuple' object has no attribute 'inventoryId'
+Traceback (most recent call last):
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 17, in get
+    response, state = self.getAll()
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\service\handler\inventoryControlHandler.py", line 64, in getAll
+    res = InventoryTableDA0Helper.toDict(res)
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\db\helper\inventoryDAOHelper.py", line 90, in toDict
+    op.append({col: getattr(item, col) for col in InventoryTable.columns})
+  File "D:\Sherine Davis\Code\PycharmProjects\Shopify-Developer-Intern-Challenge\shopify\db\helper\inventoryDAOHelper.py", line 90, in <dictcomp>
+    op.append({col: getattr(item, col) for col in InventoryTable.columns})
+AttributeError: 'tuple' object has no attribute 'inventoryId'
+2022-05-16 21:39:41,148 	 [WARNING | web.py:2239] > 404 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 21:40:23,036 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:40:23,041 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:40:25,828 	 [INFO | web.py:2239] > 304 GET / (::1) 0.00ms
+2022-05-16 21:40:26,067 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 145.54ms
+2022-05-16 21:40:26,070 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:40:26,070 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:40:26,070 	 [INFO | web.py:2239] > 200 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 21:41:07,707 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:41:07,728 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:41:11,741 	 [INFO | web.py:2239] > 304 GET / (::1) 13.56ms
+2022-05-16 21:41:11,808 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:42:26,496 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:42:26,497 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 74689.16ms
+2022-05-16 21:42:26,676 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 177.38ms
+2022-05-16 21:43:50,490 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:43:50,492 	 [INFO | inventoryControlHandler.py:67] > Serving the request from cached data...
+2022-05-16 21:43:53,260 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:43:53,261 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 2771.19ms
+2022-05-16 21:45:14,146 	 [INFO | web.py:2239] > 304 GET / (::1) 2.00ms
+2022-05-16 21:45:14,262 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 5.00ms
+2022-05-16 21:45:14,265 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:45:14,265 	 [INFO | inventoryControlHandler.py:67] > Serving the request from cached data...
+2022-05-16 21:45:19,401 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:45:19,402 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 5137.64ms
+2022-05-16 21:45:35,527 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:45:35,531 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:45:39,524 	 [INFO | web.py:2239] > 200 GET / (::1) 6.00ms
+2022-05-16 21:45:39,755 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=6446fe8c95dbcfbec4624d1a57338b285f56aef2d5463f82a8ed4b12a4f6c645f153e35774fbceca457da843ebbbdfcbd5482c09d23086a9a962aa18fe7963a4 (::1) 155.23ms
+2022-05-16 21:45:39,759 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 3.00ms
+2022-05-16 21:45:39,760 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:45:39,760 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:45:39,761 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 1.00ms
+2022-05-16 21:48:02,837 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:48:02,848 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:48:09,202 	 [INFO | web.py:2239] > 200 GET / (::1) 1.01ms
+2022-05-16 21:48:09,398 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=fbf8c9b1213b4f943b6b6bc162c1fc056801f3a4a25695dc0dd31c56fd109458482c1a548d8a0ec123bd858f642e80eb19a94921048e76f145880ba8245ee40b (::1) 150.75ms
+2022-05-16 21:48:09,407 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 9.04ms
+2022-05-16 21:48:09,407 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:48:09,407 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:48:09,407 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 21:48:45,758 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 21:48:45,762 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 21:48:53,180 	 [INFO | web.py:2239] > 200 GET / (::1) 4.00ms
+2022-05-16 21:48:53,432 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=3e158f1bc86b7a97e8c6436fb69acf2f7402f5f8e2e12500a38abd34f2119f4d414c7eaf36e4845ad21bd5c27149de0abd8e143e59a400784bca916f0eefc96f (::1) 199.74ms
+2022-05-16 21:48:53,438 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 5.09ms
+2022-05-16 21:48:53,439 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 21:48:53,440 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 21:48:53,440 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 1.00ms
+2022-05-16 22:22:36,806 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:22:36,806 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:22:39,665 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 22:22:39,932 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=7743775cfd74a0b381a2679e94b5999bb8e96fac3d58b19e57c6b8c9c86c029ad7693a7436880c2cd1e5492d56917f780bcc0d15a4693fe50eb6c7c9ede03c7b (::1) 219.57ms
+2022-05-16 22:22:39,932 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 22:22:39,932 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:22:39,932 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:22:39,932 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 22:23:00,985 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:23:00,992 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:23:03,965 	 [INFO | web.py:2239] > 200 GET / (::1) 7.00ms
+2022-05-16 22:23:04,223 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=2b1e2a5762253d6d4548be6380627c7dbf70245a7ad0351c19f88921376bd5d91de3d635fba951f7ed7e9d4048954b9a3b29113af56155931ff4bf179ccb8990 (::1) 198.05ms
+2022-05-16 22:23:04,230 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 6.00ms
+2022-05-16 22:23:04,232 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:23:04,232 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:23:04,233 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 2.00ms
+2022-05-16 22:23:59,519 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:23:59,534 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:24:02,252 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 22:24:02,487 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=964c5a1765c9b8f3daaae8ed63f8271ac8bd2584861ce2ebbbecb328fd5fb145ba437029e956896b8d92fc3a5bbc1e59367177a587641836fdaa298a87be3df4 (::1) 188.32ms
+2022-05-16 22:24:02,487 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 22:24:02,487 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:24:02,487 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:24:02,502 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 15.63ms
+2022-05-16 22:27:32,604 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:27:32,620 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:27:36,469 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 22:27:36,689 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=77cc731c8be59bf28a9381adf95b250354812208e88820af677845107c79df4b5585a9d3a3055754117388b1ee9dbd852176b53c80bfc6dd98946bae2c36c0f4 (::1) 162.47ms
+2022-05-16 22:27:36,689 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 22:27:36,689 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:27:36,689 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:27:36,689 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 22:29:10,125 	 [INFO | web.py:2239] > 304 GET / (::1) 1.00ms
+2022-05-16 22:29:10,237 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 5.00ms
+2022-05-16 22:29:10,238 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:29:10,239 	 [INFO | inventoryControlHandler.py:67] > Serving the request from cached data...
+2022-05-16 22:29:10,239 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:29:10,240 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 2.00ms
+2022-05-16 22:29:48,911 	 [INFO | web.py:2239] > 304 GET / (::1) 0.00ms
+2022-05-16 22:29:49,021 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:29:49,021 	 [INFO | inventoryControlHandler.py:67] > Serving the request from cached data...
+2022-05-16 22:29:49,021 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:29:49,021 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 22:29:49,021 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 22:36:19,104 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:36:19,109 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:36:22,818 	 [INFO | web.py:2239] > 200 GET / (::1) 3.01ms
+2022-05-16 22:36:23,056 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=c057660519f3b855101a345ba0e9d113fa9936fbf89d19b75f9614104a373143f771153a20f599d6aa0335a7d576b4a302c310b7a04f17f5cce2990610c58825 (::1) 197.04ms
+2022-05-16 22:36:23,062 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 5.00ms
+2022-05-16 22:36:23,064 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:36:23,064 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:36:23,065 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 2.00ms
+2022-05-16 22:41:46,268 	 [INFO | web.py:2239] > 304 GET / (::1) 1.00ms
+2022-05-16 22:41:46,370 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:41:46,370 	 [INFO | inventoryControlHandler.py:67] > Serving the request from cached data...
+2022-05-16 22:41:46,370 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:41:46,370 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 7.01ms
+2022-05-16 22:41:46,378 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 7.32ms
+2022-05-16 22:41:50,481 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:41:50,481 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:41:51,919 	 [INFO | web.py:2239] > 200 GET / (::1) 0.00ms
+2022-05-16 22:41:52,201 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=97b719927a095ed63c226399fdcb5212c66be4497bd9124325ea3f41b0688d215a7452073c78c83e8fd9eaaa42618af4b4c5fe51997e4633b1b2fb1b2bc8bac6 (::1) 217.38ms
+2022-05-16 22:41:52,201 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 0.00ms
+2022-05-16 22:41:52,216 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:41:52,216 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:41:52,216 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 0.00ms
+2022-05-16 22:42:37,041 	 [DEBUG | proactor_events.py:623] > Using proactor: IocpProactor
+2022-05-16 22:42:37,041 	 [INFO | app.py:26] > [TEST] Dashboard service listening on http://localhost:8080
+2022-05-16 22:42:42,437 	 [INFO | web.py:2239] > 200 GET / (::1) 5.00ms
+2022-05-16 22:42:42,706 	 [INFO | web.py:2239] > 200 GET /static/js/index.js?v=43c96ed8f6fa2c6a0f36afdbc3e1fb6b7dcee10938ba3c98a08888a201f61ed85b98ead6fad6c6744c238d30b8d79a8db2da334413ccccf31ff5f8f3c1d2e905 (::1) 207.05ms
+2022-05-16 22:42:42,710 	 [INFO | web.py:2239] > 200 GET /static/css/bootstrap.min.css.map (::1) 3.01ms
+2022-05-16 22:42:42,711 	 [INFO | inventoryControlHandler.py:13] > [GET] Request - /api/inventory/list
+2022-05-16 22:42:42,711 	 [INFO | inventoryControlHandler.py:21] > [GET] Response - /api/inventory/list
+2022-05-16 22:42:42,711 	 [INFO | web.py:2239] > 304 GET /api/inventory/list (::1) 1.00ms

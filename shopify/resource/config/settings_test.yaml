@@ -1,0 +1,3 @@
+mockDB: True
+servicePort: 8080
+augmentData: True
